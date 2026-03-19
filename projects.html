@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Nayan Kumbhare</title>
+  <meta name="description" content="Projects by Nayan Kumbhare – Data dashboards, Python analytics, computer vision, and web apps." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <canvas id="stars-canvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">NK.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="blob blob-1" style="top:-20%;left:-10%;"></div>
+    <div class="blob blob-2" style="bottom:0;right:-10%;"></div>
+    <span class="section-tag reveal">Portfolio</span>
+    <h1 class="reveal" data-delay="100">My <span>Projects</span></h1>
+    <p class="reveal" data-delay="200">All projects are available on GitHub – from data dashboards to deep learning.</p>
+  </header>
+
+  <!-- ═══ FILTER BAR ═══ -->
+  <section class="section" style="padding-top:2rem;padding-bottom:2rem;">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="data">Data Analytics</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS GRID ═══ -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1: Covid-19 Dashboard -->
+        <article class="project-card card reveal tilt-card" data-category="data" data-delay="0">
+          <div class="proj-header" style="background:linear-gradient(135deg,#63b3ed22,#a78bfa22);">
+            <span class="proj-icon">🦠</span>
+            <div class="proj-links">
+              <a href="https://github.com/kumbharen222222" target="_blank" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Covid-19 Dashboard</h3>
+            <p>Built an interactive COVID-19 dashboard using Power BI. Designed KPI cards, maps, and time-series visuals. Analysed trends across regions to identify outbreak patterns and support data-driven reporting.</p>
+            <div class="proj-tags">
+              <span class="tech-pill">Power BI</span>
+              <span class="tech-pill">Data Visualization</span>
+              <span class="tech-pill">KPI Analysis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: CSAT Score Analysis -->
+        <article class="project-card card reveal tilt-card" data-category="data" data-delay="100">
+          <div class="proj-header" style="background:linear-gradient(135deg,#34d39922,#63b3ed22);">
+            <span class="proj-icon">📈</span>
+            <div class="proj-links">
+              <a href="https://github.com/kumbharen222222" target="_blank" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>CSAT Score Analysis</h3>
+            <p>Conducted Customer Satisfaction (CSAT) score analysis using Python to measure customer experience and identify improvement areas. Applied data preprocessing and visualisation techniques for clear insight reporting.</p>
+            <div class="proj-tags">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">Matplotlib</span>
+              <span class="tech-pill">Data Analysis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Rock Paper Scissors -->
+        <article class="project-card card reveal tilt-card" data-category="ai" data-delay="200">
+          <div class="proj-header" style="background:linear-gradient(135deg,#a78bfa22,#34d39922);">
+            <span class="proj-icon">✂️</span>
+            <div class="proj-links">
+              <a href="https://github.com/kumbharen222222" target="_blank" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Rock Paper Scissors (CV)</h3>
+            <p>Developed a real-time Rock–Paper–Scissors game using computer vision and deep learning. Leveraged a CNN model for hand gesture classification. Integrated OpenCV and MediaPipe for dynamic hand tracking and live webcam input processing.</p>
+            <div class="proj-tags">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">CNN</span>
+              <span class="tech-pill">OpenCV</span>
+              <span class="tech-pill">MediaPipe</span>
+              <span class="tech-pill">Deep Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Stock Comparison & KPI Analysis -->
+        <article class="project-card card reveal tilt-card" data-category="data" data-delay="0">
+          <div class="proj-header" style="background:linear-gradient(135deg,#fb923c22,#a78bfa22);">
+            <span class="proj-icon">📊</span>
+            <div class="proj-links">
+              <a href="https://github.com/kumbharen222222" target="_blank" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Stock Comparison & KPI Analysis</h3>
+            <p>Analysed stock market data using Python to compare company performance based on key KPIs. Created visualisations to identify trends and support investment analysis decision-making.</p>
+            <div class="proj-tags">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">NumPy</span>
+              <span class="tech-pill">Matplotlib</span>
+              <span class="tech-pill">KPI Analysis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Portfolio Website -->
+        <article class="project-card card reveal tilt-card" data-category="web" data-delay="100">
+          <div class="proj-header" style="background:linear-gradient(135deg,#63b3ed22,#34d39922);">
+            <span class="proj-icon">🌐</span>
+            <div class="proj-links">
+              <a href="https://github.com/kumbharen222222" target="_blank" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>Designed and built this personal portfolio website from scratch using HTML, CSS, and JavaScript. Features dark theme, 3D card animations, scroll-reveal effects, animated star canvas, and EmailJS contact form.</p>
+            <div class="proj-tags">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">EmailJS</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center reveal" data-delay="200" style="margin-top:3rem;">
+        <a href="https://github.com/kumbharen222222" target="_blank" class="btn btn-outline">
+          View All on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">NK.</div>
+    <div class="footer-socials">
+      <a href="https://github.com/kumbharen222222" target="_blank" rel="noopener" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.216.682-.48 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.909-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/nayan-kumbhare/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452H17.09v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.745V9h3.214v1.561h.046c.447-.85 1.54-1.747 3.17-1.747 3.39 0 4.016 2.231 4.016 5.133v6.505zM5.337 7.433a1.866 1.866 0 1 1 0-3.731 1.866 1.866 0 0 1 0 3.731zM6.97 20.452H3.7V9h3.27v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:kumbharen9@gmail.com" title="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© 2026 Nayan Kumbhare. Crafted with ❤️ and code.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = ''; card.style.animation = 'fadeIn 0.4s ease forwards';
+          } else { card.style.display = 'none'; }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
